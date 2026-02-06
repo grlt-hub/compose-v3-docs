@@ -8,7 +8,7 @@ const base = '/compose-v3-docs'
 
 export default defineConfig({
   site: "https://grlt-hub.github.io",
-   base: base,
+   base: '/' + base,
   integrations: [
     react(),
     starlight({
@@ -24,21 +24,21 @@ export default defineConfig({
         {
           label: "Learn",
           items: [
-            { slug: `${base}/learn/quick-start `},
-            { slug: `${base}/learn/installation` },
-            { slug: `${base}/learn/linting` },
-            { slug: `${base}/learn/typescript` },
+            { slug: `learn/quick-start`},
+            { slug: `learn/installation` },
+            { slug: `learn/linting` },
+            { slug: `learn/typescript` },
           ],
           collapsed: true,
         },
         {
           label: "Guides",
           items: [
-            { slug: `${base}/guides/coupling-practices` },
-            { slug: `${base}/guides/getting-task-result` },
-            { slug: `${base}/guides/handling-errors` },
-            { slug: `${base}/guides/using-task-status` },
-            { slug: `${base}/guides/inspecting-app-topology` },
+            { slug: `guides/coupling-practices` },
+            { slug: `guides/getting-task-result` },
+            { slug: `guides/handling-errors` },
+            { slug: `guides/using-task-status` },
+            { slug: `guides/inspecting-app-topology` },
           ],
           collapsed: true,
         },
