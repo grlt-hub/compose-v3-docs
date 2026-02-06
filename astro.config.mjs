@@ -8,15 +8,15 @@ const base = '/compose-v3-docs'
 
 export default defineConfig({
   site: "https://grlt-hub.github.io",
-   base: '/' + base,
+  base: "/compose-v3-docs",
   integrations: [
     react(),
     starlight({
       title: "App-Compose",
       description: "App Compose - Compose modules into apps",
       social: [
-        { icon: "open-book", label: "Learn", href: `${base}/learn/quick-start/` },
-        { icon: "rocket", label: "Sandbox", href: `${base}/sandbox/` },
+        { icon: "open-book", label: "Learn", href: "/compose-v3-docs/learn/quick-start/" },
+        { icon: "rocket", label: "Sandbox", href: "/compose-v3-docs/sandbox/" },
         { icon: "github", label: "GitHub", href: "https://github.com/grlt-hub/compose-v3-docs" },
       ],
       logo: { src: "./src/assets/logo.svg", replacesTitle: true },
@@ -24,21 +24,21 @@ export default defineConfig({
         {
           label: "Learn",
           items: [
-            { slug: `learn/quick-start`},
-            { slug: `learn/installation` },
-            { slug: `learn/linting` },
-            { slug: `learn/typescript` },
+            { slug: "learn/quick-start" },
+            { slug: "learn/installation" },
+            { slug: "learn/linting" },
+            { slug: "learn/typescript" },
           ],
           collapsed: true,
         },
         {
           label: "Guides",
           items: [
-            { slug: `guides/coupling-practices` },
-            { slug: `guides/getting-task-result` },
-            { slug: `guides/handling-errors` },
-            { slug: `guides/using-task-status` },
-            { slug: `guides/inspecting-app-topology` },
+            { slug: "guides/coupling-practices" },
+            { slug: "guides/getting-task-result" },
+            { slug: "guides/handling-errors" },
+            { slug: "guides/using-task-status" },
+            { slug: "guides/inspecting-app-topology" },
           ],
           collapsed: true,
         },
