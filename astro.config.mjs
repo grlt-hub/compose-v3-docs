@@ -6,7 +6,7 @@ import starlightLlmsTxt from "starlight-llms-txt"
 
 export default defineConfig({
   site: "https://grlt-hub.github.io",
-  // base: "/app-compose",
+   base: "/compose-v3-docs",
   integrations: [
     react(),
     starlight({
@@ -15,7 +15,7 @@ export default defineConfig({
       social: [
         { icon: "open-book", label: "Learn", href: "/learn/quick-start/" },
         { icon: "rocket", label: "Sandbox", href: "/sandbox/" },
-        { icon: "github", label: "GitHub", href: "https://github.com/grlt-hub/app-compose" },
+        { icon: "github", label: "GitHub", href: "https://github.com/grlt-hub/compose-v3-docs" },
       ],
       logo: { src: "./src/assets/logo.svg", replacesTitle: true },
       sidebar: [
