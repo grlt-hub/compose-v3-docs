@@ -1,0 +1,2 @@
+patchedDependencies:
+  starlight-llms-txt: patches/starlight-llms-txt.patch
