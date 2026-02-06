@@ -1,0 +1,20 @@
+# Local
+.DS_Store
+*.local
+*.log*
+.env
+.env.production
+
+# Dist
+node_modules
+dist/
+storybook-static
+.astro/
+
+# IDE
+.vscode
+!.vscode/extensions.json
+.idea
+
+# Coverage
+/coverage

@@ -1,0 +1,46 @@
+---
+title: Using TypeScript
+description: App-Compose — Using TypeScript
+---
+
+import Sandbox from "../../../../components/sandbox/index.astro"
+import tagType from "./tag-type.ts?raw"
+import taskResult from "./task-result.ts?raw"
+
+App-Compose comes with built-in TypeScript support, so you can start writing type-safe code right away.
+
+## TypeScript with Tags
+
+When creating a Tag, you can specify the data type it holds.
+
+<Sandbox
+  template="vanilla-ts"
+  code={tagType}
+  options={{ layout: "console", editorHeight: 250, showConsoleButton: false, hideOutput: true }}
+/>
+
+This provides full type safety for both Tag inputs and outputs.
+
+## Useful Types
+
+### TaskResult&lt;T&gt;
+
+Extracts the return type of a given Task.
+
+<Sandbox
+  template="vanilla-ts"
+  code={taskResult}
+  options={{ layout: "console", editorHeight: 250, showConsoleButton: false, hideOutput: true }}
+/>
+
+### TaskStatus
+
+Represents the possible execution outcomes of a Task.
+
+{/* prettier-ignore */}
+```ts
+type TaskStatus = 
+  | { name: "done" } 
+  | { name: "skip" } 
+  | { name: "fail"; error: unknown };
+```
